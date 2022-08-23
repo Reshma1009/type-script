@@ -1,17 +1,18 @@
 let heading = document.querySelectorAll( ".counter" );
 
-let text = heading.innerHTML;
+
 
 let typeArr = Array.from( heading );
 console.log(typeArr);
 typeArr.map( ( item ) => {
   console.log( item );
   let counter = 0;
+  let text = item.innerHTML;
   function type() {
     counter++;
     item.innerHTML = counter;
-    if ( counter == item.length ) {
-      clearInterval(stop)
+    if (counter == text) {
+      clearInterval(stop);
     }
   }
 let stop= setInterval(() => {
