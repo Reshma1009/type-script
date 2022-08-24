@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.slide{
+  width: 100%;
+  height: 500px;
+  background-size: cover !important;
+  position: absolute;
+  transform: translateX(100%);
+}
+.active{
+  transform: translateX(0%);
+
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+.one{
+  background: url(../Slider/img/1.jpg) no-repeat center;
+}
+.two{
+  background: url(../Slider/img/2.jpg) no-repeat center;
+}
+.three{
+  background: url(../Slider/img/3.jpg) no-repeat center;
+}
